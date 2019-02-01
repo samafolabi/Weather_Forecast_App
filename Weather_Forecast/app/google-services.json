@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "265302496317",
+    "firebase_url": "https://weather-forecast-3225f.firebaseio.com",
+    "project_id": "weather-forecast-3225f",
+    "storage_bucket": "weather-forecast-3225f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265302496317:android:7ced63d40adc8df7",
+        "android_client_info": {
+          "package_name": "com.imperial.weatherforecast"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "265302496317-gadgrrc33p9oag76beal8n6kea53ng8t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.imperial.weatherforecast",
+            "certificate_hash": "5FCDBF8767DD476F3439830978FBEC9C550F8DAD"
+          }
+        },
+        {
+          "client_id": "265302496317-0n9s5cgnf32bp9prpoeshr2bhadv75js.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAP8ZqNKBqhDZjq6fmv6mS6PwQgkTEgyO8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "265302496317-0n9s5cgnf32bp9prpoeshr2bhadv75js.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

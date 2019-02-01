@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorAccent"
+    tools:context="com.imperial.weatherforecast.MainActivity">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:onClick="open"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/white"
+        android:background="@color/buttoncolor"
+        android:text="@string/weather"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/editText1" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="120dp">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:background="@drawable/circular_textview"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="@string/country"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:background="@drawable/circular_textview"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="@string/temperature"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:background="@drawable/circular_textview"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/humidity"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:background="@drawable/circular_textview"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/pressure"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editText1"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:textColorHint="@color/hintcolor"
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:hint="@string/location"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:includeFontPadding="true"
+        android:paddingLeft="25dp"
+        android:inputType="text"
+        android:imeOptions="actionGo"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>
+
+
+
+
+
+    <!--color, different screens, flag of country, enter key, app icon,
+    ads-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+tools:context="com.imperial.weatherforecast.MainActivity">
+
+ <TextView
+    android:id="@+id/textView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="25dp"
+    android:text="@string/location"/>-->
+
+    <!--<TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="19dp"
+        android:text="@string/temperature"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="32dp"
+        android:text="@string/humidity"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="21dp"
+        android:text="@string/pressure"
+        android:textAppearance="?android:attr/textAppearanceSmall" />-->
+
+    <!--<EditText
+        android:id="@+id/editText2"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:ems="10" >
+
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText3"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText2"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/editText4"
+        android:ems="10" />-->
+
+    <!--<TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/country"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_below="@+id/button1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />-->
+
+    <!--<Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="open"
+        android:padding="15dp"
+        android:text="@string/weather"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/editText1" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:layout_height="40dp"
+        android:layout_width="350dp"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/location"/>
+
+    <LinearLayout
+        android:weightSum="2"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:background="@drawable/circular_textview"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="@string/country"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:background="@drawable/circular_textview"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="@string/temperature"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:background="@drawable/circular_textview"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:text="@string/humidity"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:background="@drawable/circular_textview"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="@string/pressure"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    </RelativeLayout>
+        -->

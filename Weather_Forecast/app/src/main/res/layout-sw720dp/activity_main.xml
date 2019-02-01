@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorAccent"
+    tools:context="com.imperial.weatherforecast.MainActivity">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+    <!--320, 480, 720, 1024, 1280, 1600, 1920, 2560-->
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:onClick="open"
+        android:textSize="35sp"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"
+        android:textColor="@color/white"
+        android:background="@color/buttoncolor"
+        android:text="@string/weather"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/editText1" />
+
+    <LinearLayout
+        android:weightSum="2"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:textSize="32sp"
+                android:id="@+id/textView2"
+                android:background="@drawable/circular_textview"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:text="@string/country"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:textSize="32sp"
+                android:id="@+id/textView3"
+                android:background="@drawable/circular_textview"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:text="@string/temperature"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:textSize="32sp"
+                android:background="@drawable/circular_textview"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:text="@string/humidity"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:textSize="32sp"
+                android:background="@drawable/circular_textview"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                android:text="@string/pressure"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editText1"
+        android:background="@drawable/rounded_edittext_720"
+        android:ems="10"
+        android:textSize="40sp"
+        android:textColorHint="@color/hintcolor"
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:hint="@string/location"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:includeFontPadding="true"
+        android:paddingLeft="35dp"
+        android:inputType="text"
+        android:imeOptions="actionGo"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>
+
+
+
+
+
+<!--color, different screens, flag of country, enter key, app icon,
+ads-->
